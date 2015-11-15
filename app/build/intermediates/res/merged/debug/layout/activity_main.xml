@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    android:orientation="vertical" >
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:hint="Enter Emergency Phone Number"
+        android:phoneNumber="true"
+        android:paddingTop="20dp"
+        android:paddingLeft="7dp"   />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSendSMS"
+        android:text="Submit"
+        android:layout_toRightOf="@id/editText"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="15dp"
+        android:background="#1C4CED" />
+
+    <TextView
+        android:id="@+id/txtStep"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/steps"
+        android:paddingTop="14dp"
+        android:paddingLeft="7dp"
+        android:paddingBottom="17dp"
+        android:layout_below="@id/editText"
+        android:lineSpacingExtra="12dp"
+    />
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/start"
+        android:layout_below="@id/txtStep"
+        android:singleLine="false"
+        android:textColor="#FFFFFF"
+        android:background="#1C4CED"/>
+
+    <TextView
+        android:id="@+id/txtStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:paddingTop="14dp"
+        android:layout_below="@id/btnStart" />
+
+</LinearLayout>
+
+<!-- From: file:/C:/Users/Serra/AndroidStudioProjects/BandAccelerometerApp2/app/src/main/res/layout/activity_main.xml -->
