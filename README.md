@@ -1,5 +1,6 @@
 # Seisir
 *Real-time seizure monitoring using the Microsoft band*
+Winning-project for HackHarvard2015, in the category of official sponsor Microsoft-API
 
 ### Inspiration
 We believe that Seisir is a revolutionary and life-saving technology. With the eyes put on the unpredictability and despair of epileptic seizures, our team  was driven to create an intelligent design, drawn by the IoT advent, that can act in a truly life-saving manner for people who suffer from epilepsy. From the elderly who so often live in solitude, to the children who can experience and not be aware of epileptic seizures during the night, we found a large set of people who can vastly improve from a reliable constant monitoring of seizure activity, and from the valuable clinical data that may arise from it.
