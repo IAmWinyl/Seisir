@@ -4,10 +4,17 @@
 Winning project at HackHarvard2015, in the category of official sponsor Microsoft-API
 
 ### Inspiration
-We believe that Seisir is a revolutionary and life-saving technology. With the eyes put on the unpredictability and despair of epileptic seizures, our team  was driven to create an intelligent design, drawn by the IoT advent, that can act in a truly life-saving manner for people who suffer from epilepsy. From the elderly who so often live in solitude, to the children who can experience and not be aware of epileptic seizures during the night, we found a large set of people who can vastly improve from a reliable constant monitoring of seizure activity, and from the valuable clinical data that may arise from it.
+We believe that Seisir as a prototype demonstrates the life-saving potential of wearable technology in the health sciences. With the eyes put on the unpredictability and despair of epileptic seizures, our team was driven to create an intelligent design that is able to respond timely to emergency situations.
+Our algorithm uses a wrist-worn biosensor to provide a convulsive seizure alarm system for infants or secluded elders, and objective quantification of seizure frequency.
 
 ### What it does
-Seisir works in real time, pulling data from an array of sensors from the Microsoft Band and pushing it to a secure server. Once an individual's data is uploaded, Seisir uses Microsoft Azure API to analyze the likelihood of the patient being having seizure activity at the time. In case of positive feedback, one's family members and medical staff are contacted via SMS within seconds, giving the chance to save lives in emergency cases.
+Seisir works in real time, pulling data from an array of sensors in the Microsoft Band, and pushing it to a secure server. We use Microsoft Azure’s API to perform constant data analysis over the cloud.
+Our anomaly detection algorithms include a Multivariate Gaussian distribution of the accelerometer and gyroscope data, that detects muscle spasms in the movement of the user’s wrist, indicative of clonic seizure activity. We complement this detection by monitoring sympathetically mediated EDA.
+In case of positive feedback, an alert system is implemented to contact one's family members and medical staff within seconds.
 
-### What's next for Seisir - Epilepsy Monitoring App
-It is our hope that the technology behind Seisir has the opportunity to be used in a research setting that is clinically relevant to seizures and other epileptiform activity. The different new sensors in development for future wearables also continually excite us for the room for breakthrough developments those create. As of now, it is our concern to implement new valuable data that came with the new Microsoft band 2 (gyroscope, skin conductance) in our prediction model.
+### What's next for Seisir—Epilepsy Monitoring App
+It is our hope that the technology behind Seisir has the opportunity to mature with access to clinical data and user testing, and to become quickly accessible to the masses with the advent of IoT. Lately, we have been especially excited by innovations in wearable technology paradigms as well as new research that opens horizons to enhance our seizure prediction model.
+
+### References
+- Poh, M. Z., Loddenkemper, T., Reinsberger, C., Swenson, N. C., Goyal, S., Sabtala, M. C., Madsen, J. R. and Picard, R. W. (2012), **Convulsive seizure detection using a wrist-worn electrodermal activity and accelerometry biosensor.** *Epilepsia*, 53: e93–e97. doi: 10.1111/j.1528-1167.2012.03444.x
+- Sarkis, R. A., Thome-Souza, S., Poh, M.-Z., Llewellyn, N., Klehm, J., Madsen, J. R., … Reinsberger, C. (2015). **Autonomic changes following generalized tonic clonic seizures: An analysis of adult and pediatric patients with epilepsy**. *Epilepsy Research*(115), 113-118. doi:10.1016/j.eplepsyres.2015.06.005
