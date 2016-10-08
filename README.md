@@ -8,12 +8,13 @@ We believe that Seisir as a prototype demonstrates the life-saving potential of 
 Our algorithm uses a wrist-worn biosensor to provide a convulsive seizure alarm system for infants or secluded elders, and objective quantification of seizure frequency.
 
 ### What it does
-Seisir works in real time, pulling data from an array of sensors in the Microsoft Band, and pushing it to a secure server. We use Microsoft Azure’s API to perform constant data analysis over the cloud.
-Our anomaly detection algorithms include a Multivariate Gaussian distribution of the accelerometer and gyroscope data, that detects muscle spasms in the movement of the user’s wrist, indicative of clonic seizure activity. We complement this detection by monitoring sympathetically mediated EDA.
+Seisir works in real time, pulling data from an array of sensors in the Microsoft Band 2, and pushing it to a secure server. We use Microsoft Azure’s API to perform constant data analysis over the cloud.
+Our anomaly detection algorithm executes an FFT in parsed data from the accelerometer, to observe the vibrational movements and muscle spasms in the user’s wrist (indicative of clonic seizure activity). The data is then furnished to a trained CNN (Convolutional Neural Network), complemented with SNS-mediated Electrodermal Activity.
 In case of positive feedback, an alert system is implemented to contact one's family members and medical staff within seconds.
 
 ### What's next for Seisir—Epilepsy Monitoring App
 It is our hope that the technology behind Seisir has the opportunity to mature with access to clinical data and user testing, and to become quickly accessible to the masses with the advent of IoT. Lately, we have been especially excited by innovations in wearable technology paradigms as well as new research that opens horizons to enhance our seizure prediction model.
+In algorithmic terms, our first step will be to reduce the need of constant accelerometry monitoring, by defining an activation threshold in EDA.
 
 ### References
 - Poh, M. Z., Loddenkemper, T., Reinsberger, C., Swenson, N. C., Goyal, S., Sabtala, M. C., Madsen, J. R. and Picard, R. W. (2012), **Convulsive seizure detection using a wrist-worn electrodermal activity and accelerometry biosensor.** *Epilepsia*, 53: e93–e97. doi: 10.1111/j.1528-1167.2012.03444.x
