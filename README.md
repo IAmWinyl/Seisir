@@ -1,7 +1,7 @@
 # Seisir
 *Real-time seizure monitoring using the Microsoft band*
 
-Winning project for HackHarvard2015, in the category of official sponsor Microsoft-API
+Winning project at HackHarvard2015, in the category of official sponsor Microsoft-API
 
 ### Inspiration
 We believe that Seisir as a prototype demonstrates the life-saving potential of wearable technology in the health sciences. With the eyes put on the unpredictability and despair of epileptic seizures, our team was driven to create an intelligent design that is able to respond timely to emergency situations.
