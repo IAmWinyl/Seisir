@@ -9,7 +9,7 @@ Our algorithm uses a wrist-worn biosensor to provide a convulsive seizure alarm 
 
 ### What it does
 Seisir works in real time, pulling data from an array of sensors in the Microsoft Band 2, and pushing it to a secure server. We use Microsoft Azure’s API to perform constant data analysis over the cloud.
-Our anomaly detection algorithm is triggered by SNS-mediated Electrodermal Activity, an autonomic change indicative of seizure activity. Following this activation, we fuse a geometric model of the 3D posture of a stiffened arm with gyroscopic data from the user's wrist, using the feature layers of a CNN (Convolutional Neural Network). The CNN consecutively analyses the vibrational movements and muscle spasms in the person's arm and wrist (with FFT), and searches for correspondences with tonic-clonic seizure activity.
+Our anomaly detection algorithm is triggered by SNS-mediated Electrodermal Activity, an autonomic change indicative of seizure activity. Following this activation, we fuse a geometric model of the 3D posture of a stiffened arm with gyroscopic data from the user's wrist, using relatively brief runs of MCMC. We then analyze the vibrational movements and muscle spasms in the person's arm and wrist (with FFT), and furnish these features to a Convolutional Neural Network (CNN) that searches for correspondences with tonic-clonic seizure activity.
 In case of positive feedback, an alert system is implemented to contact one's family members and medical staff within the shortest conceivable alarm period ever.
 
 ### What's next for Seisir—Epilepsy Monitoring App
