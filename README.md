@@ -9,8 +9,8 @@ Our algorithm uses a wrist-worn biosensor to provide a convulsive seizure alarm 
 
 ### What it does
 Seisir works in real time, pulling data from an array of sensors in the Microsoft Band 2, and pushing it to a secure server. We use Microsoft Azure’s API to perform constant data analysis over the cloud.
-Our anomaly detection algorithm is triggered by SNS-mediated Electrodermal Activity, an autonomic change indicative of seizure activity. Following this activation, we fuse a geometric model of the 3D posture of a stiffened arm with gyroscopic data from the user's wrist, using relatively brief runs of MCMC. We then analyze the vibrational movements and muscle spasms in the person's arm and wrist (with FFT), and furnish these features to a Convolutional Neural Network (CNN) that searches for correspondences with tonic-clonic seizure activity.
-In case of positive feedback, an alert system is implemented to contact one's family members and medical staff within the shortest conceivable alarm period ever.
+Our anomaly detection algorithm is triggered by increases in Electrodermal Activity, an autonomic change indicative of seizure activity. Following this activation, we fuse a geometric model of the 3D posture of an arm with gyroscopic data from the user's wrist, using relatively brief runs of MCMC. We analyze the jerking movements in the person's arm and body with a Convolutional Neural Network (CNN) that searches for correspondences with tonic-clonic seizure activity.
+In case of epileptical activity lasting more than 5 minutes, our alert system considers it a medical emergency and contacts one's family members and medical staff within the shortest time period possible.
 
 ### What's next for Seisir—Epilepsy Monitoring App
 It is our hope that the technology behind Seisir has the opportunity to mature with access to clinical data and user testing, and to become quickly accessible to the masses with the advent of IoT. We have been especially excited by the utility of 24/7 monitoring data for medical purposes, and are interested in the refinement of our model to categorize different types of seizures.
